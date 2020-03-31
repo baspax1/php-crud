@@ -1,3 +1,4 @@
+
 <?php
 	require 'db.php';
 	
@@ -32,6 +33,7 @@
 	
 	while ($name= $statement->fetch(PDO::FETCH_ASSOC)){
 		
+		
 		echo '<tr>';
 		
 		
@@ -45,9 +47,11 @@
 		
 		echo '<td>	<a href="http://localhost:80/php/crud/edit.php?id='.$name["id"].'&choice=edit" class="btn btn-info">Edit</a>';
 		
-		echo '<a onclick=return confirm("Are you sure you want to delete this entry?") href="http://localhost:80/php/crud/edit.php?id='.$name["id"].'&choice=delete" class="btn btn-danger">Delete</a>';
+		echo '<a onclick="return confirm(\'Are you sure you want to delete this entry?\')" href="http://localhost:80/php/crud/edit.php?id='.$name["id"].'&choice=delete" class="btn btn-danger">Delete</a>';
 		
 		echo '</td>';
 				
 		echo '</tr>';
 	}			
+
+	

@@ -1,8 +1,16 @@
-
+		
 <?php
 	
 	require 'db.php';
-		
+
+	session_start();
+
+	if(!$_SESSION['isLogged']) {
+	header("Location: /php/crud/login.php"); 
+	die(); 
+	}
+	else
+	echo "<b>Welcome </b>".$_SESSION["uname"];	
 ?>
 
 
@@ -13,21 +21,17 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-	
-	<script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
-	
-	
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 	<link rel="stylesheet" href="css/style.css" />
 	
 	
+	
 </head>
 
 <body>
+
+
     <div class="container">
 		
 		<!-- header -->
@@ -36,6 +40,7 @@
 			<div class="header-left">
 				<a class="active" href="http://localhost:80/php/crud/index.php">Home</a>
 				<a href="http://localhost:80/php/crud/signup.php">Sign Up</a>
+				<a href="http://localhost:80/php/crud/login.php">Log out</a>
 				
 			</div>
 		</div>
@@ -97,12 +102,11 @@
 			
 			<!-- Footer -->
 			<footer class="page-footer font-small special-color-dark pt-4">
-				
+				</footer>
 			</div><!-- container -->
 		</body>
 		
 		<script>
-		
 		$(document).ready(function(){
 				
 				load_data();
@@ -133,4 +137,3 @@
 				});	
 			});
 		</script>
-		

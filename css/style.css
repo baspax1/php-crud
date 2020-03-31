@@ -50,3 +50,138 @@
     float: none;
   }
 }
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+.header {
+	background-color:red;
+	}
+	.navbar .navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+	
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+.header {
+	background-color:red;
+	
+	}
+	
+	
+
+
+	.form-group , .form-control{
+		
+	width: 10%;
+    height: 34px;
+    padding: 4px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 33px;
+	}
+	
+	p .error  {color: #FF0000;}
+	
+	.container{
+	
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+.header {
+	background-color:red;
+	}
+	.navbar .navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+	
+
+
+	.form-group , .form-control{
+		
+	width: 14%;
+    height: 34px;
+    padding: 4px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 33px;
+	}
+	
+	.form {
+	
+	width: 40%;
+	}
+	
+	.error {color: #FF0000;}
+	
+	.container{
+	
+    width:20%;
+    justify-content: center;
+    align-items: center;
+	}
+	
+	input[type=text], input[type=password] {
+		width: 100%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		display: inline-block;
+		border: 1px solid #ccc;
+		box-sizing: border-box;
+	}
+
+	button .mybutton{
+		background-color: #4CAF50;
+		color: white;
+		padding: 14px 20px;
+		margin: 8px 0;
+		border: none;
+		cursor: pointer;
+		width: 100%;
+	}
+
+	button:hover {
+		opacity: 0.8;
+	}
+
